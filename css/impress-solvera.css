@@ -491,7 +491,7 @@ body     { pointer-events: none; }
 }
 
 /* FCC stuff */
-img#fcc-logo {
+svg#solvera-logo {
   margin: 20px;
 }
 
@@ -518,10 +518,4 @@ h1.title {
 
 code {
   font-family: mono;
-}
-
-.purpose {
-  margin: 3em;
-  text-align: justify;
-  font-style: italic;
 }
