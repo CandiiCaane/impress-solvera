@@ -45,8 +45,8 @@
 
 
 
-  <div id="what-next" class="step slide title" data-x="3000" data-y="8000" data-z="3000">
-    <h1 class="title">Next?</h1>
+  <div id="what-next" class="step slide title" data-x="3000" data-y="1000">
+    <h1 class="title">This is a TITLE slide!!</h1>
     <ul>
       <li>Eclipse project import with Gradle</li>
       <li>Develop under Linux/Mac</li>
@@ -54,28 +54,28 @@
       <li>???</li>
     </ul>
   </div>
-<div class="step slide" data-x="4500" data-y="8000" data-z="3000">
+<div class="step slide" data-x="4500" data-y="1000">
   slide
 </div>
-<div class="step slide" data-x="6000" data-y="8000" data-z="3000">
+<div class="step slide" data-x="6000" data-y="1000">
   another slide
 </div>
-<div class="step slide" data-x="7500" data-y="8000" data-z="3000">
+<div class="step slide" data-x="7500" data-y="1000">
   witty slide
 </div>
-<div class="step slide" data-x="9000" data-y="8000" data-z="3000">
+<div class="step slide" data-x="9000" data-y="1000">
   not so witty slide
 </div>
-<div class="step slide" data-x="10500" data-y="8000" data-z="3000">
+<div class="step slide" data-x="10500" data-y="1000">
   slide
 </div>
-<div class="step slide" data-x="12000" data-y="8000" data-z="3000">
+<div class="step slide" data-x="12000" data-y="1000">
   another slide
 </div>
-<div class="step slide" data-x="13500" data-y="8000" data-z="3000">
+<div class="step slide" data-x="13500" data-y="1000">
   witty slide
 </div>
-<div class="step slide" data-x="15000" data-y="8000" data-z="3000">
+<div class="step slide" data-x="15000" data-y="1000">
   not so witty slide
 </div>
 
@@ -128,7 +128,7 @@ if ("ontouchstart" in document.documentElement) {
     window.addEventListener('impress:stepenter', function(event) {
       makeItLookPretty()
       if ($(event.target).hasClass("title")) {
-        $("#solvera-logo").attr("class", "")
+        $("#solvera-logo").attr("class", "increase-logo")
       } else {
         $("#solvera-logo").attr("class", "reduce-logo")
       }
