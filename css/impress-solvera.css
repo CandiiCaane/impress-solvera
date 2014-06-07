@@ -519,3 +519,16 @@ div#solvera-footer {
   width: 100%;
   background-color: #007AA5;
 }
+
+.reduce-logo {
+  -webkit-transform: scale(0.5);
+  -moz-transform:    scale(0.5);
+  -ms-transform:     scale(0.5);
+  -o-transform:      scale(0.5);
+  transform:         scale(0.5);
+  -webkit-transition: 0.5s;
+  -moz-transition:    0.5s;
+  -ms-transition:     0.5s;
+  -o-transition:      0.5s;
+  transition:         0.5s;
+}

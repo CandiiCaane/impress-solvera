@@ -27,11 +27,13 @@
   <svg version="1.1"
     baseProfile="full"
     width="160" height="150"
-    xmlns="http://www.w3.org/2000/svg" id="solvera-logo">
+    xmlns="http://www.w3.org/2000/svg"
+    id="solvera-logo"
+    viewBox="0 0 160 150">
 
-    <rect width="30" height="30" x="35" y="15" fill="black" />
-    <rect width="30" height="30" x="80" y="0" fill="#007AA5" />
-    <rect width="30" height="30" x="65" y="45" fill="#898b8e" />
+    <rect id="solv-black" width="30" height="30" x="35" y="15" fill="black" />
+    <rect id="solv-blue" width="30" height="30" x="80" y="0" fill="#007AA5" />
+    <rect id="solv-grey" width="30" height="30" x="65" y="45" fill="#898b8e" />
 
     <text x="80" y="120" font-size="40" text-anchor="middle" fill="#007AA5">SOLVERA</text>
     <text x="80" y="150" font-size="18.5" text-anchor="middle" fill="#898b8e">CRAFTING RESULTS</text>
@@ -43,7 +45,7 @@
 
 
 
-  <div id="what-next" class="step slide" data-x="3000" data-y="8000" data-z="3000">
+  <div id="what-next" class="step slide title" data-x="3000" data-y="8000" data-z="3000">
     <h1 class="title">Next?</h1>
     <ul>
       <li>Eclipse project import with Gradle</li>
@@ -97,6 +99,7 @@ if ("ontouchstart" in document.documentElement) {
 
 <script src="js/impress.js"></script>
 <script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/snap.svg-min.js"></script>
 
 <script>impress().init();</script>
 <script>
@@ -124,6 +127,15 @@ if ("ontouchstart" in document.documentElement) {
   $(function() {
     window.addEventListener('impress:stepenter', function(event) {
       makeItLookPretty()
+      if ($(event.target).hasClass("title")) {
+        $("#solvera-logo").attr("class", "")
+      } else {
+        $("#solvera-logo").attr("class", "reduce-logo")
+      }
+
+      var s = Snap("#solvera-logo");
+      var e = s.select("#solv-black")
+      //e.attr("fill", "red");
     }
   )});
 
