@@ -50,19 +50,6 @@ q:before, q:after {
     content: '';
     content: none;
 }
-ul.ci {
-  list-style-type: none;
-  padding: 0px;
-  margin: 0px;
-}
-ul.ci li {
-  background-image: url('../images/jenkinsLogo1-small.png');
-  background-repeat: no-repeat;
-  background-position: 0px 10px;
-  background-size:18px 24px;
-  padding-left: 24px;
-  margin: 0.5em 0;
-}
 
 table {
     border-collapse: collapse;
@@ -75,12 +62,12 @@ body {
 
     min-height: 740px;
 
-    background: rgb(215, 215, 215);
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(0, 62, 116)));
-    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
-    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
-    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
-    background:         radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
+    background: rgb(255, 255, 255);
+//    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 500, from(rgb(240, 240, 240)), to(rgb(0, 62, 116)));
+//    background: -webkit-radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
+//    background:    -moz-radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
+//    background:      -o-radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
+//    background:         radial-gradient(rgb(240, 240, 240), rgb(0, 62, 116));
 
     -webkit-font-smoothing: antialiased;
 }
@@ -490,9 +477,9 @@ body     { pointer-events: none; }
     display: block;
 }
 
-/* FCC stuff */
+/* Solvera stuff */
 svg#solvera-logo {
-  margin: 20px;
+  //margin: 20px;
 }
 
 .notes {
@@ -518,4 +505,17 @@ h1.title {
 
 code {
   font-family: mono;
+}
+
+div#solvera-header {
+  padding: 2em;
+  background: linear-gradient(to right, white 15%, #898b8e 85%);
+}
+
+div#solvera-footer {
+  position: absolute;
+  bottom: 0px;
+  height: 1em;
+  width: 100%;
+  background-color: #007AA5;
 }
